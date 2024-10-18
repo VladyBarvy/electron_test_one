@@ -2,18 +2,22 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import CardOne from './CardOne.jsx'
 
 function App() {
   //const [count, setCount] = useState(0);
 
+  const product = {
+    name: 'Товар 1',
+    description: 'Это подробное описание товара, которое будет обрезано до 20 символов.'
+  };
 
-  
 
   return (
     <>
 
 
-
+      <CardOne product={product} />
 
 
 
