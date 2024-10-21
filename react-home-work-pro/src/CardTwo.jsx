@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import './CardTwo.css';
+import faceImage from './images/a1.jpg'
 
 const CardTwo = () => {
 
   const description = "\
-  Материал корпуса – нержавеющая сталь.\
-  Кожаный ремешок.\
-  Стекло – Gorila Glass.\
-  Батарея – Li-Pol 320 mAh, зарядка через USB.\
-  Лампы индикаторные газоразрядные ИВ-16."
-    ;
+    Материал корпуса – нержавеющая сталь.\
+    Кожаный ремешок.\
+    Стекло – Gorila Glass.\
+    Батарея – Li-Pol 320 mAh, зарядка через USB.\
+    Лампы индикаторные газоразрядные ИВ-16."
+  ;
 
-  const faceImage = '../images/a1.jpg';
+  //const faceImage = './a1.jpg';
 
   const [isExpanded, setIsExpanded] = useState(false);
   const [isFavorited, setIsFavorited] = useState(false);
