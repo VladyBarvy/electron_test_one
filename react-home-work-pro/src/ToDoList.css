@@ -8,9 +8,13 @@
 .task-card-wrapper {
   flex: 1 1 calc(33% - 16px); /* три карточки в ряд с промежутком */
   box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  color: var(--text-color);
 }
 
-.task-card {
+.task-card-11 {
   border: 1px solid #ddd;
   padding: 16px;
   border-radius: 8px;

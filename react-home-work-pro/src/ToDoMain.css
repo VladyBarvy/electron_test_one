@@ -479,3 +479,86 @@ h1, h3, p, div, .child, .task-card-wrapper {
 .theme-toggle-slider {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+
+
+
+
+/* 
+.light-theme {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+
+.dark-theme {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.main-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.change-text {
+  color: var(--text-color);
+}
+ */
+
+
+
+
+
+/* Для светлой темы */
+.light-theme {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #007bff;
+}
+
+/* Для тёмной темы */
+.dark-theme {
+  --background-color: #333333;
+  --text-color: #ffffff;
+  --link-color: #ff6600;
+}
+
+/* Применение глобальных стилей для body */
+html, body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Можно установить стиль для верхней панели на мобильных устройствах */
+meta[name="theme-color"] {
+  content: var(--background-color);
+}
+
+/* Дополнительные стили */
+.main-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.change-text {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}

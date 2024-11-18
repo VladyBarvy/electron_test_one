@@ -1,43 +1,45 @@
 import React, { useState, useEffect } from 'react'
 import './ToDoMain.css';
+import { ThemeProvider, useTheme } from './ThemeContext';
 import ThemeToggle from './ThemeToggle';
 import TaskAdd from './TaskAdd.jsx'
 import ToDoList from './ToDoList.jsx'
 import CreateTaskButt from './CreateTaskButt.jsx'
 
+
 const ToDoMain = () => {
   const [tasks, setTasks] = useState([]);
+  const { isDarkMode } = useTheme(); // Получаем текущую тему
 
   const handleCreateTask = (newTask) => {
     setTasks((prevTasks) => [...prevTasks, newTask]);
   };
 
-  const [isDarkMode, setIsDarkMode] = useState(false); // Стейт для отслеживания текущей темы
+  //const [isDarkMode, setIsDarkMode] = useState(false); // Стейт для отслеживания текущей темы
 
 
-  useEffect(() => {
-    // Применяем классы к корневому элементу
-    const rootElement = document.getElementById('root');
-    if (isDarkMode) {
-      rootElement.classList.add('dark-theme');
-      rootElement.classList.remove('light-theme');
-    } else {
-      rootElement.classList.add('light-theme');
-      rootElement.classList.remove('dark-theme');
-    }
-  }, [isDarkMode]);
+  // useEffect(() => {
+  //   const rootElement = document.getElementById('root');
+  //   if (isDarkMode) {
+  //     rootElement.classList.add('dark-theme');
+  //     rootElement.classList.remove('light-theme');
+  //   } else {
+  //     rootElement.classList.add('light-theme');
+  //     rootElement.classList.remove('dark-theme');
+  //   }
+  // }, [isDarkMode]);
 
 
 
 
-  // Функция для переключения темы
-  const toggleTheme = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-  };
+  
+  // const toggleTheme = () => {
+  //   setIsDarkMode((prevMode) => !prevMode);
+  // };
 
   return (
 
-    <div className="main-card">
+    <div className="main-card-1">
 
       {/* /////////////////////////////////////////////////////////////////////////////////// */}
 
