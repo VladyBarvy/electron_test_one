@@ -19,6 +19,13 @@
   margin-top: 20px;
 }
 
-button {
+/* button {
   margin-top: 10px;
+} */
+
+.create-butt {
+width: 110px;
+height: 35px;
+background-color: #d7dadd; /* Цвет заднего фона */
+border-radius: 15px;
 }

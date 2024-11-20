@@ -20,7 +20,7 @@ const CreateTaskButt = ({ onCreateTask }) => {
 
   return (
     <>
-      <button onClick={handleOpenForm}>Создать задачу</button>
+      <button className="create-butt" onClick={handleOpenForm}>Add task</button>
 
       {isFormOpen && (
         <div className="task-form-modal">

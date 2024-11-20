@@ -57,31 +57,10 @@ h1.change-text:hover{
 
 
 
-/* 
-body.light-theme {
-  background-color: #ffffff;
-  color: #000000;
-}
 
 
-body.dark-theme {
-  background-color: #121212;
-  color: #ffffff;
-}
 
 
-.theme-toggle-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #008CBA;
-  color: white;
-}
-.theme-toggle-btn:hover {
-  background-color: #005f73;
-} */
 
 
 
@@ -110,124 +89,20 @@ body.dark-theme {
 
 
 
-/* 
 
 
-.toggle-button-cover {
-   display: table-cell; 
-  position: relative; 
-  width: 80px;
-  height: 50px;
-   box-sizing: border-box; 
-}
 
-.button-cover {
-  height: 100px;
-  margin: 20px;
-  background-color: #b09a9a;
-  box-shadow: 0 10px 20px -8px #b1b5b5;
-  border-radius: 4px;
-}
 
-.button-cover:before {
-  counter-increment: button-counter;
-  content: counter(button-counter);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  color: #d7e3e3;
-  font-size: 12px;
-  line-height: 1;
-  padding: 5px;
-}
 
-.button-cover,
-.knobs,
-.layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 
-.button {
-  position: absolute;
-   top: 50%;
-  width: 74px;
-  height: 36px;
-   margin: -20px auto 0 auto; 
-  overflow: hidden;
-}
 
-.button.r,
-.button.r .layer {
-  border-radius: 100px;
-}
 
-.button.b2 {
-  border-radius: 2px;
-}
 
-.checkbox {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 3;
-}
 
-.knobs {
-  z-index: 2;
-}
-
-.layer {
-  width: 100%;
-  background-color: #ebf7fc;
-  transition: 0.3s ease all;
-  z-index: 1;
-}
-
-
-#button-3 .knobs:before {
-  content: "☀️";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 20px;
-  height: 10px;
-  color: #fff;
-  font-size: 10px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1;
-  padding: 9px 4px;
-  background-color: #03a9f4;
-  border-radius: 50%;
-  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
-}
 
-#button-3 .checkbox:active + .knobs:before {
-  width: 46px;
-  border-radius: 100px;
-}
 
-#button-3 .checkbox:checked:active + .knobs:before {
-  margin-left: -26px;
-}
 
-#button-3 .checkbox:checked + .knobs:before {
-  content: "🌙";
-  left: 42px;
-  background-color: #f44336;
-}
 
-#button-3 .checkbox:checked ~ .layer {
-  background-color: #fcebeb;
-}
 
 
 
@@ -238,122 +113,6 @@ body.dark-theme {
 
 
 
-
-
-
-
-
-
-
-
-.toggle {
-  cursor: pointer;
-  display: inline-block;
-}
-
-.toggle-switch {
-  display: inline-block;
-  background: #ccc;
-  border-radius: 16px;
-  width: 58px;
-  height: 32px;
-  position: relative;
-  vertical-align: middle;
-  transition: background 0.25s;
-}
-.toggle-switch:before, .toggle-switch:after {
-  content: "";
-}
-.toggle-switch:before {
-
-  display: block;
-  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  transition: left 0.25s;
-}
-.toggle:hover .toggle-switch:before {
-  
-  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
-}
-.toggle-checkbox:checked + .toggle-switch {
-  content: "🌙";
-  background: #56c080;
-}
-.toggle-checkbox:checked + .toggle-switch:before {
- 
-  left: 30px;
-}
-
-.toggle-checkbox {
-  position: absolute;
-  visibility: hidden;
-}
-
-.toggle-label {
-  margin-left: 5px;
-  position: relative;
-  top: 2px;
-}
-
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body.light-theme {
-  background-color: #fff;
-  color: #000;
-}
-
-body.dark-theme {
-  background-color: #121212;
-  color: #fff;
-} */
-
-
-
-
-
-
-
-
-
-
-
-/* .light-theme {
-  --text-color: black;
-  --background-color: white;
-}
-
-
-.dark-theme {
-  --text-color: white;
-  --background-color: black;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-} */
 
 
 
@@ -398,141 +157,23 @@ h1, h3, p, div, .child, .task-card-wrapper {
 
 
 
+ 
 
 
-/* Контейнер для переключателя */
-.theme-toggle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-/* Стили для самого переключателя */
-.theme-toggle {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Скрываем настоящий чекбокс */
-.theme-toggle-checkbox {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* Слайдер переключателя */
-.theme-toggle-slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-/* Округлая кнопка переключателя */
-.theme-toggle-slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  border-radius: 50%;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-}
-
-/* Когда чекбокс выбран */
-.theme-toggle-checkbox:checked + .theme-toggle-slider {
-  background-color: #ccc; /* Зеленый при тёмной теме */
-}
-
-/* Когда переключатель находится в положении "включено" */
-.theme-toggle-checkbox:checked + .theme-toggle-slider:before {
-  transform: translateX(2px);
-}
-
-/* Иконки: солнце и луна */
-.theme-toggle-slider::before {
-  content: '☀️'; /* Символ солнца по умолчанию */
-  position: absolute;
-  /* left: 10px; */
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.theme-toggle-checkbox:checked + .theme-toggle-slider::before {
-  content: '🌙'; /* Символ луны для тёмной темы */
-  left: 30px;
-}
-
-/* Тени для переключателя (по желанию) */
-.theme-toggle-slider {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-
-
-
-
-/* 
-.light-theme {
-  --background-color: #ffffff;
-  --text-color: #000000;
-}
-
-
-.dark-theme {
-  --background-color: #333333;
-  --text-color: #ffffff;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-.main-card {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-.change-text {
-  color: var(--text-color);
-}
- */
-
-
-
-
-
-/* Для светлой темы */
 .light-theme {
   --background-color: #ffffff;
   --text-color: #000000;
   --link-color: #007bff;
 }
 
-/* Для тёмной темы */
+
 .dark-theme {
   --background-color: #333333;
   --text-color: #ffffff;
   --link-color: #ff6600;
 }
 
-/* Применение глобальных стилей для body */
+
 html, body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -540,12 +181,12 @@ html, body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Можно установить стиль для верхней панели на мобильных устройствах */
+
 meta[name="theme-color"] {
   content: var(--background-color);
 }
 
-/* Дополнительные стили */
+
 .main-card {
   background-color: var(--background-color);
   color: var(--text-color);

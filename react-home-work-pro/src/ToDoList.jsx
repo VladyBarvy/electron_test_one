@@ -10,7 +10,7 @@ import TaskCard from './TaskCard.jsx'
 
 const ToDoList = ({ tasks }) => {
   return (
-    <div className="task-container-1">
+    <div className="task-container">
       {tasks.map((task, index) => (
         <div className="task-card-wrapper" key={index}>
           <TaskCard  task={task} />

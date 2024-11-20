@@ -1,0 +1,124 @@
+/* 
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.theme-toggle-input {
+  display: none; 
+}
+
+.theme-toggle-slider {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.theme-toggle-slider::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+
+.theme-toggle-input:checked + .theme-toggle-slider {
+  background-color: #4caf50;
+}
+
+.theme-toggle-input:checked + .theme-toggle-slider::before {
+  transform: translateX(26px); 
+}
+
+
+.theme-toggle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+ /* Контейнер переключателя */
+.toggle-container {
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* font-size: 20px; */
+  background-color: #d7dadd; /* Цвет заднего фона */
+  /* padding: 2px; */
+  border-radius: 15px;
+  
+}
+
+/* Значки */
+.icon {
+  color: white; /* Цвет иконок */
+  font-size: 24px;
+}
+
+/* Стили переключателя */
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  display: inline-block;
+}
+
+.toggle input {
+  display: none; /* Скрыть стандартный чекбокс */
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e2e2e; /* Цвет фона */
+  transition: background-color 0.3s ease;
+  border-radius: 25px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 3px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Активный стиль */
+.toggle input:checked + .slider {
+  background-color: #007bff; /* Цвет при активном состоянии */
+}
+
+.toggle input:checked + .slider::before {
+  transform: translateX(25px); /* Сдвиг круга вправо */
+}
+

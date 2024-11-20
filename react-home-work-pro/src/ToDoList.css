@@ -1,5 +1,6 @@
 .task-container {
-  display: flex;
+  /* display: flex; */
+  width: 600px;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: space-between;

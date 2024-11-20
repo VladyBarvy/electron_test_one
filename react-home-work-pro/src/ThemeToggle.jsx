@@ -38,21 +38,51 @@
 
 
 // ThemeToggle.jsx
+// import React from 'react';
+// import { useTheme } from './ThemeContext.jsx';
+
+// const ThemeToggle = () => {
+//   const { isDarkMode, toggleTheme } = useTheme();
+
+//   return (
+//     <label>
+//       <input
+//         type="checkbox"
+//         checked={isDarkMode}
+//         onChange={toggleTheme}
+//       />
+//       {isDarkMode ? 'Dark Mode' : 'Light Mode'}
+//     </label>
+//   );
+// };
+
+// export default ThemeToggle;
+
+
+
+
+
+
+
 import React from 'react';
 import { useTheme } from './ThemeContext.jsx';
+import './ThemeToggle.css'; // Подключение CSS
 
 const ThemeToggle = () => {
   const { isDarkMode, toggleTheme } = useTheme();
 
   return (
-    <label>
-      <input
-        type="checkbox"
-        checked={isDarkMode}
-        onChange={toggleTheme}
-      />
-      {isDarkMode ? 'Dark Mode' : 'Light Mode'}
-    </label>
+    <div className="toggle-container">
+      <span className="icon">{isDarkMode ? '🌙' : '☀️'}</span>
+      <label className="toggle">
+        <input
+          type="checkbox"
+          checked={isDarkMode}
+          onChange={toggleTheme}
+        />
+        <span className="slider"></span>
+      </label>
+    </div>
   );
 };
 
